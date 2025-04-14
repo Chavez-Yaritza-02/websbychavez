@@ -1,18 +1,17 @@
-    body {
-        margin: 0;
-        padding-top: 80px; /* altura suficiente para que no tape contenido */
-        font-family: 'Segoe UI', sans-serif;
-        background-color: #fff;
-        color: #333;
-      }
-      section {
-        scroll-margin-top: 100px;
-      }
-      
+body {
+    margin: 0;
+    padding-top: 80px;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #fff;
+    color: #333;
+  }
   
- /* Barra de navegación */
- .navbar {
-    position: relative; /* o puedes simplemente eliminar la línea */
+  section {
+    scroll-margin-top: 100px;
+  }
+  
+  .navbar {
+    position: relative;
     width: 100%;
     background-color: #fff;
     color: #111;
@@ -22,8 +21,8 @@
     padding: 15px 40px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     z-index: 1000;
+    flex-wrap: wrap;
   }
-  
   
   .logo {
     font-size: 24px;
@@ -46,9 +45,17 @@
   }
   
   .navbar a:hover {
-    color: #474b48; 
+    color: #474b48;
   }
   
+  .menu-toggle {
+    display: none;
+    font-size: 26px;
+    cursor: pointer;
+    user-select: none;
+  }
+  
+  /* Hero (portada) */
   .hero {
     background: url('img/portada1.png') no-repeat left center/cover;
     height: 90vh;
@@ -60,7 +67,7 @@
   }
   
   .contenido-hero {
-    background-color: rgba(0, 0, 0, 0.7); /* caja negra semitransparente */
+    background-color: rgba(0, 0, 0, 0.7);
     padding: 30px;
     border-radius: 10px;
     max-width: 500px;
@@ -83,7 +90,19 @@
     text-decoration: none;
     border-radius: 8px;
     font-weight: bold;
+    transition: background-color 0.2s ease, transform 0.1s ease;
   }
+  
+  .boton:hover {
+    background-color: #333;
+  }
+  
+  .boton:active {
+    background-color: #555;
+    transform: scale(0.96);
+  }
+  
+  /* Servicios */
   .servicios {
     padding: 60px 40px;
     background-color: #f9f9f9;
@@ -121,6 +140,8 @@
     font-size: 16px;
     color: #555;
   }
+  
+  /* Portafolio */
   .portafolio {
     padding: 60px 40px;
     background-color: #fff;
@@ -144,7 +165,7 @@
     border-radius: 12px;
     padding: 20px;
     max-width: 300px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     text-align: left;
   }
   
@@ -174,184 +195,8 @@
     border-radius: 8px;
     font-weight: bold;
   }
-  .contacto {
-    padding: 60px 20px;
-    background-color: #f9f9f9;
-    text-align: center;
-    scroll-margin-top: 100px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .contacto h2 {
-    padding-top: 10px;
-  }
   
-  .contacto p {
-    font-size: 16px;
-    color: #555;
-    margin-bottom: 30px;
-  }
-  
-  .formulario-contacto {
-    width: 100%;
-    max-width: 500px;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    text-align: left;
-  }
-  
-  .formulario-contacto input,
-  .formulario-contacto textarea {
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    font-family: inherit;
-  }
-  
-  .formulario-contacto button {
-    padding: 12px;
-    background-color: #111;
-    color: white;
-    border: none;
-    border-radius: 8px;
-    font-weight: bold;
-    cursor: pointer;
-  }
-  
-  .formulario-contacto button:hover {
-    background-color: #333;
-  }
-  
-  .whatsapp {
-    display: inline-block;
-    margin-top: 20px;
-    font-weight: bold;
-    color: #25D366;
-    background-color: #eaeaea;
-    padding: 10px 16px;
-    border-radius: 8px;
-    text-decoration: none;
-    font-size: 16px;
-    transition: background-color 0.2s ease;
-  }
-  
-  .whatsapp:hover {
-    background-color: #d0d0d0;
-  }
-  
-  
-  .formulario-contacto button:hover {
-    background-color: #333;
-  }
-  .boton:active {
-    background-color: #444;
-    transform: scale(0.96);
-  }
-/* Botón normal */
-.formulario-contacto button,
-.boton {
-  padding: 12px 24px;
-  background-color: #111;
-  color: white;
-  border: none;
-  border-radius: 8px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: background-color 0.2s ease, transform 0.1s ease;
-}
-
-/* Al pasar el mouse */
-.formulario-contacto button:hover,
-.boton:hover {
-  background-color: #333;
-}
-
-/* Al hacer clic (efecto presionado) */
-.formulario-contacto button:active,
-.boton:active {
-  background-color: #555;
-  transform: scale(0.96);
-}
-.footer {
-    background-color: #111;
-    color: white;
-    text-align: center;
-    padding: 30px 20px;
-    font-size: 14px;
-    margin-top: 60px;
-  }
-  
-  .footer .redes {
-    margin-top: 10px;
-  }
-  
-  .footer a {
-    color: #25D366; /* color verde estilo WhatsApp */
-    text-decoration: none;
-    margin: 0 8px;
-  }
-  
-  .footer a:hover {
-    text-decoration: underline;
-  }
-  section {
-    scroll-margin-top: 100px; /* ajusta según la altura de tu navbar */
-  }
-  #contacto {
-    scroll-margin-top: 100px;
-  }
-  @media (max-width: 768px) {
-    /* Navegación apilada */
-    .navbar {
-        flex-direction: column;
-        align-items: center; /* ← cambia esto de "flex-start" a "center" */
-        text-align: center;
-      }
-      
-      .navbar ul {
-        flex-direction: column;
-        gap: 15px;
-        padding: 0;
-        margin-top: 10px;
-        align-items: center;
-      }
-    .navbar a {
-      font-size: 16px;
-    }
-  
-    .hero {
-        flex-direction: column;
-        justify-content: flex-end;
-        padding: 40px 20px;
-        text-align: flex;
-      }
-      
-      .contenido-hero {
-        max-width: 100%;
-        padding: 20px;
-      }
-      
-  
-    /* Servicios y portafolio apilados */
-    .contenedor-servicios,
-    .galeria-portafolio {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    /* Contacto más cómodo */
-    .formulario-contacto {
-      margin-left: 0;
-      padding: 0 10px;
-    }
-  
-    .footer {
-      font-size: 12px;
-      padding: 20px 10px;
-    }
-  }
+  /* Precios */
   .precios {
     padding: 60px 40px;
     background-color: #fff;
@@ -404,18 +249,117 @@
     color: #888;
     margin-top: 30px;
   }
-  /* Estilo base */
-.menu-toggle {
-    display: none;
-    font-size: 26px;
-    cursor: pointer;
-    user-select: none;
+  
+  /* Contacto */
+  .contacto {
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+    scroll-margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   
-  /* Responsive */
+  .contacto h2 {
+    padding-top: 10px;
+  }
+  
+  .contacto p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 30px;
+  }
+  
+  .formulario-contacto {
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: left;
+  }
+  
+  .formulario-contacto input,
+  .formulario-contacto textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-family: inherit;
+  }
+  
+  .formulario-contacto button {
+    padding: 12px;
+    background-color: #111;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+  }
+  
+  .formulario-contacto button:hover {
+    background-color: #333;
+  }
+  
+  .formulario-contacto button:active {
+    background-color: #555;
+    transform: scale(0.96);
+  }
+  
+  .whatsapp {
+    display: inline-block;
+    margin-top: 20px;
+    font-weight: bold;
+    color: #25D366;
+    background-color: #eaeaea;
+    padding: 10px 16px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background-color 0.2s ease;
+  }
+  
+  .whatsapp:hover {
+    background-color: #d0d0d0;
+  }
+  
+  /* Footer */
+  .footer {
+    background-color: #111;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    font-size: 14px;
+    margin-top: 60px;
+  }
+  
+  .footer .redes {
+    margin-top: 10px;
+  }
+  
+  .footer a {
+    color: #25D366;
+    text-decoration: none;
+    margin: 0 8px;
+  }
+  
+  .footer a:hover {
+    text-decoration: underline;
+  }
+  
+  /* ========== MENÚ RESPONSIVE (hamburguesa) ========== */
   @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
     .menu-toggle {
       display: block;
+      margin-left: auto;
     }
   
     #nav-links {
@@ -423,28 +367,59 @@
       flex-direction: column;
       width: 100%;
       background-color: #fff;
-      padding: 20px;
+      padding: 20px 0;
+      border-top: 1px solid #ddd;
+      align-items: center;
+      text-align: center;
     }
   
     #nav-links ul {
       flex-direction: column;
       gap: 15px;
       padding: 0;
+      margin: 0;
+      list-style: none;
     }
   
     #nav-links ul li {
-      list-style: none;
-      text-align: center;
+      width: 100%;
     }
   
     #nav-links ul li a {
-      text-decoration: none;
+      font-size: 16px;
       color: #111;
-      font-size: 18px;
+      display: block;
+      padding: 10px 0;
+      text-decoration: none;
     }
   
     #nav-links.active {
       display: flex;
+    }
+  
+    /* Ajustes extra para portada y secciones */
+    .hero {
+      flex-direction: column;
+      justify-content: center;
+      padding: 40px 20px;
+      text-align: center;
+    }
+  
+    .contenido-hero {
+      max-width: 100%;
+      padding: 20px;
+    }
+  
+    .contenedor-servicios,
+    .galeria-portafolio,
+    .contenedor-precios {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .footer {
+      font-size: 12px;
+      padding: 20px 10px;
     }
   }
   
