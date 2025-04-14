@@ -323,9 +323,9 @@
   
     .hero {
         flex-direction: column;
-        justify-content: center;
+        justify-content: flex-end;
         padding: 40px 20px;
-        text-align: center;
+        text-align: flex;
       }
       
       .contenido-hero {
