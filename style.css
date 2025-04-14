@@ -11,19 +11,19 @@
       
   
  /* Barra de navegación */
-.navbar {
-    position: fixed;
-    top: 0;
+ .navbar {
+    position: relative; /* o puedes simplemente eliminar la línea */
     width: 100%;
-    background-color: #fff; /* o usa #111 para fondo oscuro */
+    background-color: #fff;
     color: #111;
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
     padding: 15px 40px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     z-index: 1000;
   }
+  
   
   .logo {
     font-size: 24px;
@@ -46,7 +46,7 @@
   }
   
   .navbar a:hover {
-    color: #25D366; /* verde WhatsApp o el que elijas */
+    color: #474b48; 
   }
   
   .hero {
@@ -201,8 +201,6 @@
     gap: 15px;
     text-align: left;
   }
-  
-  
   
   .formulario-contacto input,
   .formulario-contacto textarea {
