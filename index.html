@@ -20,15 +20,19 @@
         
       </ul>
     </nav>
-  </header>
-
-  <section class="hero" id="inicio">
-    <div class="contenido-hero">
-      <h2>Tu negocio en línea,<br>fácil y rápido</h2>
-      <p>Páginas web,para pequeños negocios y emprendimientos.</p>
-      <a href="#contacto" class="boton">Solicita tu sitio</a>
-    </div>
-  </section>
+    <header class="navbar">
+        <h1 class="logo">Webs por Yaritza Chavez</h1>
+        <div class="menu-toggle" id="menu-toggle">☰</div>
+        <nav id="nav-links">
+          <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#portafolio">Portafolio</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </nav>
+      </header>
+      
   <section id="servicios" class="servicios">
     <h2>Servicios</h2>
     <div class="contenedor-servicios">
@@ -138,6 +142,14 @@
     </div>
   </footer>
   
+  <script>
+    const toggle = document.getElementById('menu-toggle');
+    const nav = document.getElementById('nav-links');
+  
+    toggle.addEventListener('click', () => {
+      nav.classList.toggle('active');
+    });
+  </script>
   
 </body>
 </html>
