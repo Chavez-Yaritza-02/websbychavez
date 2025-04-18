@@ -36,7 +36,6 @@ body {
   display: flex;
   gap: 20px;
 }
-
 .nav-links ul li a {
   color: rgb(14, 13, 13);
   text-decoration: none;
@@ -242,7 +241,7 @@ body {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     text-align: left;
   }
-  
+    
   .proyecto img {
     width: 100%;
     border-radius: 8px;
@@ -496,4 +495,3 @@ body {
       padding: 20px 10px;
     }
   }
-   
