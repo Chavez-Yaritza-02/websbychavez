@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Webs por Yaritza Chavez</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- 🧭 Menú de navegación con hamburguesa -->
+  <header class="navbar">
+    <h1 class="logo">Webs por Yaritza Chavez</h1>
+    <div class="menu-toggle" id="menu-toggle">☰</div>
+    <nav id="nav-links">
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#portafolio">Portafolio</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- 👇 Aquí puedes poner tu portada si tienes una -->
+  <section id="inicio" class="hero">
+    <div class="contenido-hero">
+      <h2>Tu negocio en línea, fácil y rápido</h2>
+      <p>Páginas web para pequeños negocios y emprendimientos.</p>
+      <a href="#contacto" class="boton">Solicita tu sitio</a>
+    </div>
+  </section>
+
+  <section id="servicios" class="servicios">
+    <h2>Servicios</h2>
+    <div class="contenedor-servicios">
+      <div class="servicio">
+        <h3>🌐 Página informativa</h3>
+        <p>Ideal para mostrar tu negocio, contacto, ubicación y servicios básicos. Diseño claro, elegante y adaptable a celular.</p>
+      </div>
+      <div class="servicio">
+        <h3>🛒 Catálogo de productos</h3>
+        <p>Diseño de un catálogo visual con productos, precios y botón de contacto por WhatsApp.</p>
+      </div>
+      <div class="servicio">
+        <h3>📱 Integración con redes</h3>
+        <p>Enlaces a redes sociales, WhatsApp directo y formularios de contacto personalizados.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="portafolio" class="portafolio">
+    <h2>Portafolio</h2>
+    <div class="galeria-portafolio">
+      <div class="proyecto">
+        <img src="img/webcabain.png" alt="Cabañas Chávez">
+        <h3>Cabañas Chávez</h3>
+        <p>Sitio para renta de cabañas, con catálogo, contacto por WhatsApp y diseño responsivo.</p>
+        <a href="https://alquilerdecabanaschavez.com/" target="_blank" class="boton">Ver sitio</a>
+      </div>
+
+      <div class="proyecto">
+        <img src="img/web2.png" alt="Webs Site">
+        <h3>Paginas Web </h3>
+        <p>Sitio ofrecimiento de servicios webs, con catálogo, contacto por WhatsApp y diseño responsivo.</p>
+        <a href="https://endearing-sunburst-da6ec7.netlify.app/" target="_blank" class="boton">Ver sitio</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="precios" class="precios">
+    <h2>Paquetes y Precios</h2>
+    <div class="contenedor-precios">
+      <div class="paquete">
+        <h3>💡 Básico</h3>
+        <p class="precio">$1,200 MXN</p>
+        <ul>
+          <li>Página informativa</li>
+          <li>Formulario de contacto</li>
+          <li>Redes sociales conectadas</li>
+          <li>Diseño adaptable a celular</li>
+        </ul>
+      </div>
+  
+      <div class="paquete">
+        <h3>🚀 Intermedio</h3>
+        <ul>
+          <li>Todo lo del paquete Básico</li>
+          <li>Catálogo de productos</li>
+          <li>Botón de WhatsApp</li>
+        </ul>
+      </div>
+  
+      <div class="paquete">
+        <h3>🌟 Pro</h3>
+        <ul>
+          <li>Todo lo del Intermedio</li>
+          <li>Mapa de ubicación</li>
+          <li>Testimonios de clientes</li>
+          <li>Diseño más personalizado</li>
+        </ul>
+      </div>
+  
+      <div class="paquete">
+        <h3>📣 Marketing Plus</h3>
+        <ul>
+          <li>Todo lo del paquete Pro</li>
+          <li>Consultoría en marketing digital</li>
+          <li>Creación de campañas en redes</li>
+          <li>Optimización SEO básica</li>
+          <li>Asesoría en imagen de marca</li>
+        </ul>
+      </div>
+  
+      <div class="paquete">
+        <h3>🎯 Branding & Storytelling</h3>
+        <ul>
+          <li>Todo lo de Marketing Plus</li>
+          <li>Creación de identidad visual (colores, logo, tipografía)</li>
+          <li>Storytelling: narrativa de tu marca</li>
+          <li>Manual básico de marca</li>
+        </ul>
+      </div>
+  
+      <div class="paquete">
+        <h3>🌐 Full Digital</h3>
+        <ul>
+          <li>Todo lo de Branding & Storytelling</li>
+          <li>Community Manager por 1 mes</li>
+          <li>Gestión de campañas en Facebook e Instagram</li>
+          <li>Informe mensual de rendimiento</li>
+          <li>Soporte técnico básico</li>
+        </ul>
+      </div>
+    </div>
+    <p class="nota">*Crea tu propio paquete según tus preferencias y necesidades.</p>
+  </section>
+  
+
+  <section id="contacto" class="contacto">
+    <h2>Contacto</h2>
+    <p>¿Tienes dudas o quieres cotizar tu sitio web? Escríbeme o contáctame directo por WhatsApp.</p>
+
+    <form class="formulario-contacto" action="https://formsubmit.co/yaritzachavezc@gmail.com" method="POST">
+      <input type="text" name="nombre" placeholder="Tu nombre" required>
+      <input type="email" name="correo" placeholder="Tu correo electrónico" required>
+      <textarea name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea>
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_next" value="https://tusitio.com/gracias.html">
+      <button type="submit">Enviar mensaje</button>
+    </form>
+
+    <a href="https://wa.me/message/VQKEZNH6V7XLH1?text=Hola%2C%20quiero%20cotizar%20una%20p%C3%A1gina%20web%20para%20mi%20negocio." 
+       target="_blank" 
+       class="whatsapp">
+       📱 Enviar WhatsApp
+    </a>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2025 Webs por Yaritza Chavez. Todos los derechos reservados.</p>
+    <div class="redes">
+      <a href="https://wa.me/message/VQKEZNH6V7XLH1" target="_blank">WhatsApp</a> |
+      <a href="mailto:yaritzachavezc@gmail.com">Correo</a>
+    </div>
+  </footer>
+
+  <!-- 🍔 Script para mostrar/ocultar menú hamburguesa -->
+  <script>
+    const toggle = document.getElementById('menu-toggle');
+    const nav = document.getElementById('nav-links');
+
+    toggle.addEventListener('click', () => {
+      nav.classList.toggle('active');
+    });
+  </script>
+
+</body>
+</html>
