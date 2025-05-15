@@ -3,189 +3,229 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Webs por Yaritza Chavez</title>
-  <link rel="stylesheet" href="style.css">
+  <title>WebLab</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          animation: {
+            'fade-in': 'fadeIn 1.5s ease-out forwards'
+          },
+          keyframes: {
+            fadeIn: {
+              '0%': { opacity: '0' },
+              '100%': { opacity: '1' }
+            }
+          }
+        }
+      }
+    }
+  </script>
 </head>
-<body>
+<body class="bg-white text-gray-800 font-sans">
 
-  <header class="navbar">
-    <div class="contenedor-navbar">
-      <h1 class="logo">Webs por Yaritza Chavez</h1>
-      <nav id="nav-links" class="nav-links">
-        <ul>
-          <li><a href="#inicio">Inicio</a></li>
-          <li><a href="#servicios">Servicios</a></li>
-          <li><a href="#portafolio">Portafolio</a></li>
-          <li><a href="#contacto">Contacto</a></li>
-        </ul>
+  <header class="absolute w-full z-10 bg-transparent text-white">
+    <div class="max-w-6xl mx-auto px-4 py-6 flex items-center justify-between">
+      <h1 class="text-2xl font-bold">WebLab</h1>
+      <nav class="hidden md:flex space-x-6" id="nav-links">
+        <a href="#inicio" class="hover:text-gray-300">Inicio</a>
+        <a href="#servicios" class="hover:text-gray-300">Servicios</a>
+        <a href="#portafolio" class="hover:text-gray-300">Portafolio</a>
+        <a href="#contacto" class="hover:text-gray-300">Contacto</a>
       </nav>
-      <div class="menu-toggle" id="menu-toggle">☰</div>
+      
+      <div class="md:hidden text-2xl cursor-pointer" id="menu-toggle">☰</div>
     </div>
   </header>
+
+  <section id="inicio" class="relative h-screen bg-cover bg-center flex items-center justify-center" style="background-image: url('img/portada1.png');">
+    <div class="animate-fade-in bg-black bg-opacity-60 text-white p-8 rounded shadow text-center max-w-xl">
+      <h2 class="text-3xl font-bold mb-4">Impulsa tu presencia digital con estrategia</h2>
+      <p class="mb-6">Diseño de páginas web, marketing y soluciones digitales para negocios modernos.</p>
+      <a href="#contacto" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded">Solicita tu propuesta</a>
+    </div>
+  </section>
+
+  <section class="bg-gray-100 py-16">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <h2 class="text-2xl font-bold mb-4">Así luce el poder del diseño estratégico. </h2>
+      <p class="mb-8 text-gray-600"> 
+        ✨ “Tu idea, nuestro diseño, el siguiente gran paso.”</p>
+      <div class="flex justify-center">
+        <video class="rounded shadow-lg w-full max-w-3xl" autoplay muted loop controls>
+          <source src="img/WhatsApp Video 2025-05-14 at 2.50.23 PM.mp4" type="video/mp4">
+          Tu navegador no admite el elemento de video.
+        </video>
+      </div>
+    </div>
+  </section>
+  
+ 
   
 
-  <!-- 👇 Aquí puedes poner tu portada si tienes una -->
-  <section id="inicio" class="hero">
-    <div class="contenido-hero">
-      <h2>Tu negocio en línea, fácil y rápido</h2>
-      <p>Páginas web para pequeños negocios y emprendimientos.</p>
-      <a href="#contacto" class="boton">Solicita tu sitio</a>
+  <section class="py-20 bg-gray-50">
+    <div class="max-w-5xl mx-auto px-4">
+      <h2 class="text-2xl font-bold text-center mb-10">¿Por qué trabajar conmigo?</h2>
+      <ul class="space-y-4 max-w-xl mx-auto">
+        <li class="flex items-start text-lg">
+          <span class="text-purple-600 text-2xl mr-4">✔️</span>
+          <span>Atención personalizada</span>
+        </li>
+        <li class="flex items-start text-lg">
+          <span class="text-purple-600 text-2xl mr-4">✔️</span>
+          <span>Diseños únicos y funcionales</span>
+        </li>
+        <li class="flex items-start text-lg">
+          <span class="text-purple-600 text-2xl mr-4">✔️</span>
+          <span>Asesoría continua</span>
+        </li>
+        <li class="flex items-start text-lg">
+          <span class="text-purple-600 text-2xl mr-4">✔️</span>
+          <span>Rapidez, compromiso y resultados reales</span>
+        </li>
+      </ul>
     </div>
-  </section> 
+  </section>
 
-  <section id="servicios" class="servicios">
-    <h2>Servicios</h2>
-    <div class="contenedor-servicios">
-      <div class="servicio">
-        <h3>🌐 Página informativa</h3>
-        <p>Ideal para mostrar tu negocio, contacto, ubicación y servicios básicos. Diseño claro, elegante y adaptable a celular.</p>
-      </div>
-      <div class="servicio">
-        <h3>🛒 Catálogo de productos</h3>
-        <p>Diseño de un catálogo visual con productos, precios y botón de contacto por WhatsApp.</p>
-      </div>
-      <div class="servicio">
-        <h3>📱 Integración con redes</h3>
-        <p>Enlaces a redes sociales, WhatsApp directo y formularios de contacto personalizados.</p>
+  <section id="servicios" class="bg-gradient-to-br from-purple-100 via-white to-blue-100 py-20">
+    <div class="max-w-6xl mx-auto px-4 text-center">
+      <h2 class="text-2xl font-bold mb-10">¿Qué incluye trabajar conmigo?</h2>
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="bg-white p-6 rounded-lg shadow hover:shadow-xl transition">
+          <img src="img/estrategia.png" class="w-12 h-12 mx-auto mb-4" alt="Idea">
+          <h3 class="font-semibold text-lg">Estrategia clara</h3>
+          <p>Te ayudo a definir objetivos digitales reales y accionables.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow hover:shadow-xl transition">
+          <img src="img/diseno.png" class="w-12 h-12 mx-auto mb-4" alt="Diseño">
+          <h3 class="font-semibold text-lg">Diseño funcional</h3>
+          <p>Todo se adapta a móviles, carga rápido y se ve profesional.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow hover:shadow-xl transition">
+          <img src="img/soporte.png" class="w-12 h-12 mx-auto mb-4" alt="Contenido">
+          <h3 class="font-semibold text-lg">Soporte en contenido</h3>
+          <p>Si lo necesitas, te ayudo a redactar textos que conectan.</p>
+        </div>
       </div>
     </div>
   </section>
 
-  <section id="portafolio" class="portafolio">
-    <h2>Mi Portafolio</h2>
-    <div class="galeria-portafolio">
-  
-      <div class="proyecto">
-        <img src="img/webcabain.png" alt="Cabañas Chávez">
-        <h3>Cabañas Chávez</h3>
-        <p>Sitio para renta de cabañas, con catálogo, contacto por WhatsApp y diseño responsivo.</p>
-        <a href="https://alquilerdecabanaschavez.com/" target="_blank" class="boton">Ver sitio</a>
+  <section id="portafolio" class="bg-gray-100 py-16">
+    <h2 class="text-2xl font-bold text-center mb-10">Mi Portafolio</h2>
+    <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-8 px-4">
+      <div class="bg-white p-4 rounded shadow">
+        <img src="img/webcabain.png" alt="Cabañas Chávez" class="mb-4">
+        <h3 class="font-semibold text-lg">Cabañas Chávez</h3>
+        <p>Sitio para renta de cabañas, diseño responsivo.</p>
+        <a href="https://alquilerdecabanaschavez.com/" target="_blank" class="text-blue-600 underline">Ver sitio</a>
       </div>
-  
-      <div class="proyecto">
-        <img src="img/web2.png" alt="Paginas Web">
-        <h3>Paginas Web</h3>
-        <p>Sitio ofrecimiento de servicios webs, con catálogo, contacto por WhatsApp y diseño responsivo.</p>
-        <a href="https://endearing-sunburst-da6ec7.netlify.app/" target="_blank" class="boton">Ver sitio</a>
+      <div class="bg-white p-4 rounded shadow">
+        <img src="img/web2.png" alt="Páginas Web" class="mb-4">
+        <h3 class="font-semibold text-lg">Páginas Web</h3>
+        <p>Ofrecimiento de servicios web y contacto por WhatsApp.</p>
+        <a href="https://endearing-sunburst-da6ec7.netlify.app/" target="_blank" class="text-blue-600 underline">Ver sitio</a>
       </div>
-  
-      <div class="proyecto">
-        <img src="img/web3.png" alt="Cabañas El Rincon">
-        <h3>Cabañas El Rincón</h3>
-        <p>Sitio ofrecimiento de servicios webs, con catálogo, contacto por WhatsApp y diseño responsivo.</p>
-        <a href="https://funny-croquembouche-b763fc.netlify.app/" target="_blank" class="boton">Ver sitio</a>
+      <div class="bg-white p-4 rounded shadow">
+        <img src="img/web3.png" alt="Cabañas El Rincón" class="mb-4">
+        <h3 class="font-semibold text-lg">Cabañas El Rincón</h3>
+        <p>Sitio de cabañas con catálogo y diseño responsive.</p>
+        <a href="https://funny-croquembouche-b763fc.netlify.app/" target="_blank" class="text-blue-600 underline">Ver sitio</a>
       </div>
-  
+      <div class="bg-white p-4 rounded shadow">
+        <img src="img/blindwave.jpeg" alt="Campaña Instagram" class="mb-4">
+        <h3 class="font-semibold text-lg">Campaña de Instagram</h3>
+        <p>Campaña visual enfocada en promocionar los trajes deportivos BLINDWAVE con un enfoque fresco y dinámico. Utiliza imágenes de modelos en la playa, agua en movimiento y tipografía llamativa para atraer al público joven. El objetivo es generar leads mediante un 15% de descuento por suscripción de correo electrónico.</p>
+          </div>
+      <div class="bg-white p-4 rounded shadow">
+        <img src="img/main.png" alt="Email Marketing" class="mb-4">
+        <h3 class="font-semibold text-lg">Email Marketing</h3>
+        <p>Automatización de correos para fidelizar clientes y promocionar productos clave.</p>
+      </div>
+      <div class="bg-white p-4 rounded shadow">
+        <img src="img/marketin2.png" alt="Sitio Web de Marketing" class="mb-4 rounded">
+        <h3 class="font-semibold text-lg text-black">Sitio Web de Marketing </h3>
+        <p class="text-gray-700 mb-2">
+          Página profesional diseñada para presentar mis servicios de marketing, portafolio creativo y certificaciones. Responsive, moderna y optimizada para destacar mi propuesta como estratega digital.
+        </p>
+        <a href="https://tu-url.netlify.app/" target="_blank" class="text-blue-600 hover:underline font-medium">
+          Ver sitio
+        </a>
+      </div>
+      
+ <div class="bg-white p-4 rounded shadow">
+  <img src="img/web4.png" alt="Web Despacho de Abogados" class="mb-4">
+  <h3 class="font-semibold text-lg">Página Web de Despacho de Abogados</h3>
+  <p>Sitio informativo y profesional para bufete jurídico. Incluye misión, visión, valores, áreas de práctica, testimonios, artículos legales y formulario de contacto. Totalmente adaptable a móviles y optimizado para Netlify.</p>
+  <a href="https://brilliant-jelly-106a6b.netlify.app/" target="_blank" class="text-blue-600 underline">Ver sitio</a>
+</div>
+
     </div>
-  </section>
-  
+    <section class="bg-white py-20">
+      <h2 class="text-2xl font-bold text-center mb-10">Paquetes Personalizados</h2>
+      <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-8 px-4">
+        <div class="border rounded-lg p-6 shadow hover:shadow-lg transition">
+          <h3 class="text-xl font-semibold mb-4">🔧 A tu medida</h3>
+          <ul class="mb-4 space-y-2">
+            <li>✔️ Elige entre sitio web, branding, marketing</li>
+            <li>✔️ Decide cuántas secciones o funciones quieres</li>
+            <li>✔️ Escoge tu estilo visual y colores</li>
+            <li>✔️ Incluye solo lo que realmente necesitas</li>
+          </ul>
+          <p class="font-bold text-lg mb-4"></p>
+          <a href="#contacto" class="inline-block bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Solicitar paquete personalizado</a>
+        </div>
+        <div class="border rounded-lg p-6 shadow hover:shadow-lg transition">
+          <h3 class="text-xl font-semibold mb-4">📦 Web + Marketing + Diseño</h3>
+          <ul class="mb-4 space-y-2">
+            <li>✔️ Sitio web con catálogo y formulario</li>
+            <li>✔️ Branding completo con logo y tipografías</li>
+            <li>✔️ Campañas de marketing + SEO básico</li>
+            <li>✔️ Gestión de redes sociales y analítica</li>
+          </ul>
+          <p class="font-bold text-lg mb-4"></p>
+          <a href="#contacto" class="inline-block bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Solicitar este paquete</a>
+        </div>
+        <div class="border rounded-lg p-6 shadow hover:shadow-lg transition">
+          <h3 class="text-xl font-semibold mb-4">🛍️ Web con Ecommerce</h3>
+          <ul class="mb-4 space-y-2">
+            <li>✔️ Tienda en línea con carrito y productos</li>
+            <li>✔️ Pasarela de pagos y catálogo administrable</li>
+            <li>✔️ Integración con redes y WhatsApp</li>
+            <li>✔️ Capacitación para actualizar tu web</li>
+          </ul>
+          <p class="font-bold text-lg mb-4"></p>
+          <a href="#contacto" class="inline-block bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Solicitar este paquete</a>
+        </div>
+      </div>
+    </section>
 
-  <section id="precios" class="precios">
-    <h2>Paquetes y Precios</h2>
-    <div class="contenedor-precios">
-      <div class="paquete">
-        <h3>💡 Básico</h3>
-        <ul>
-          <li>Página informativa</li>
-          <li>Formulario de contacto</li>
-          <li>Redes sociales conectadas</li>
-          <li>Diseño adaptable a celular</li>
-        </ul>
-      </div>
-  
-      <div class="paquete">
-        <h3>🚀 Intermedio</h3>
-        <ul>
-          <li>Todo lo del paquete Básico</li>
-          <li>Catálogo de productos</li>
-          <li>Botón de WhatsApp</li>
-        </ul>
-      </div>
-  
-      <div class="paquete">
-        <h3>🌟 Pro</h3>
-        <ul>
-          <li>Todo lo del Intermedio</li>
-          <li>Mapa de ubicación</li>
-          <li>Testimonios de clientes</li>
-          <li>Diseño más personalizado</li>
-        </ul>
-      </div>
-  
-      <div class="paquete">
-        <h3>📣 Marketing Plus</h3>
-        <ul>
-          <li>Todo lo del paquete Pro</li>
-          <li>Consultoría en marketing digital</li>
-          <li>Creación de campañas en redes</li>
-          <li>Optimización SEO básica</li>
-          <li>Asesoría en imagen de marca</li>
-        </ul>
-      </div>
-  
-      <div class="paquete">
-        <h3>🎯 Branding & Storytelling</h3>
-        <ul>
-          <li>Todo lo de Marketing Plus</li>
-          <li>Creación de identidad visual (colores, logo, tipografía)</li>
-          <li>Storytelling: narrativa de tu marca</li>
-          <li>Manual básico de marca</li>
-        </ul>
-      </div>
-  
-      <div class="paquete">
-        <h3>🌐 Full Digital</h3>
-        <ul>
-          <li>Todo lo de Branding & Storytelling</li>
-          <li>Community Manager por 1 mes</li>
-          <li>Gestión de campañas en Facebook e Instagram</li>
-          <li>Informe mensual de rendimiento</li>
-          <li>Soporte técnico básico</li>
-        </ul>
-      </div>
-    </div>
-    
-    <p class="nota">*Crea tu propio paquete según tus preferencias y necesidades.</p>
-  </section>
-  
-
-  <section id="contacto" class="contacto">
-    <h2>Contacto</h2>
-    <p>¿Tienes dudas o quieres cotizar tu sitio web? Escríbeme o contáctame directo por WhatsApp.</p>
-
-    <form class="formulario-contacto" action="https://formsubmit.co/yaritzachavezc@gmail.com" method="POST">
-      <input type="text" name="nombre" placeholder="Tu nombre" required>
-      <input type="email" name="correo" placeholder="Tu correo electrónico" required>
-      <textarea name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea>
+  <section id="contacto" class="py-16 bg-white">
+    <h2 class="text-2xl font-bold text-center mb-6">Contacto</h2>
+    <p class="text-center mb-6">¿Tienes dudas o quieres cotizar algún servicio digital? Escríbeme o contáctame directo por WhatsApp.</p>
+    <form action="https://formsubmit.co/yaritzachavezc@gmail.com" method="POST" class="max-w-xl mx-auto grid gap-4 px-4">
+      <input type="text" name="nombre" placeholder="Tu nombre" required class="border border-gray-300 px-4 py-2 rounded">
+      <input type="email" name="correo" placeholder="Tu correo electrónico" required class="border border-gray-300 px-4 py-2 rounded">
+      <textarea name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí..." required class="border border-gray-300 px-4 py-2 rounded"></textarea>
       <input type="hidden" name="_captcha" value="false">
       <input type="hidden" name="_next" value="https://tusitio.com/gracias.html">
-      <button type="submit">Enviar mensaje</button>
+      <button type="submit" class="bg-green-600 hover:bg-green-700 text-white px-6 py-2 rounded">Enviar mensaje</button>
     </form>
+    <div class="text-center mt-4">
+      <a href="https://wa.me/message/VQKEZNH6V7XLH1?text=Hola%2C%20quiero%20cotizar%20una%20p%C3%A1gina%20web." class="text-blue-600 underline">📱 Enviar WhatsApp</a>
+    </div>
+  </section>
 
-    <a href="https://wa.me/message/VQKEZNH6V7XLH1?text=Hola%2C%20quiero%20cotizar%20una%20p%C3%A1gina%20web%20para%20mi%20negocio." 
-       target="_blank" 
-       class="whatsapp">
-       📱 Enviar WhatsApp 
-    </a>
-  </section> 
-
-  <footer class="footer">
-    <p>&copy; 2025 Webs por Yaritza Chavez. Todos los derechos reservados.</p>
-    <div class="redes">
-      <a href="https://wa.me/message/VQKEZNH6V7XLH1" target="_blank">WhatsApp</a> |
-      <a href="mailto:yaritzachavezc@gmail.com">Correo</a>
+  <footer class="bg-gray-900 text-white py-6">
+    <div class="max-w-6xl mx-auto text-center">
+      <p>&copy; 2025 Servicios Digitales por Yaritza Chavez. Todos los derechos reservados.</p>
+      <div class="mt-2">
+        <a href="https://wa.me/message/VQKEZNH6V7XLH1" target="_blank" class="hover:text-gray-400">WhatsApp</a> |
+        <a href="mailto:yaritzachavezc@gmail.com" class="hover:text-gray-400">Correo</a>
+      </div>
     </div>
   </footer>
 
-  <!-- 🍔 Script para mostrar/ocultar menú hamburguesa -->
-  <script>
-    const toggle = document.getElementById('menu-toggle');
-    const nav = document.getElementById('nav-links');
-
-    toggle.addEventListener('click', () => {
-      nav.classList.toggle('active');
-    });
-  </script>
-
 </body>
 </html>
+
